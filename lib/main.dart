@@ -40,8 +40,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     print("Name: " + nameController.text);
     print("Email: " + emailController.text);
     print(
-      "Interests: " +
-          interests.entries.where((e) => e.value).map((e) => e.key).join(', '),
+      "Interests: ${interests.entries.where((e) => e.value).map((e) => e.key).join(', ')}",
     );
   }
 
@@ -56,7 +55,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           children: [
             Center(
               child: Image.network(
-                "https://miro.medium.com/v2/resize:fit:3840/1*1QJzJiri8js9PqwqlcOOCw.png",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQANnz29ywPuw_rISd1Vyh0MI6DFxjaEw280soF3jGucumUnUmW6qXC6EL_saQjZ2o95xE&usqp=CAU",
                 height: 100,
                 errorBuilder: (context, error, stackTrace) {
                   return const Icon(
