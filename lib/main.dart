@@ -56,7 +56,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             Center(
               child: Image.network(
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQANnz29ywPuw_rISd1Vyh0MI6DFxjaEw280soF3jGucumUnUmW6qXC6EL_saQjZ2o95xE&usqp=CAU",
-                height: 100,
+                height: 200,
                 errorBuilder: (context, error, stackTrace) {
                   return const Icon(
                     Icons.account_circle,
